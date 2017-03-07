@@ -17,4 +17,10 @@
 ## 解决(2)   
 这个方法适用于出现下面的错误   
 **Error: SSL peer shut down incorrectly**    
-同样是因为gradle不能正
+同样是因为gradle不能正确下载所需要gradle版本压缩包导致的。
+
+* 同样翻墙进入Gradle官网：   
+![](http://p1.bqimg.com/567571/110346e0589b652f.png)   
+可以看到这时候最新的版本是3.4.1，并不推荐下载最新版本，可以选择稍微老的版本，这里我下载了3.3版本。    
+
+* 将下载好的gradle包解压到AndroidStudio安装路径下的Gradle路径下，然后重启软件，gradle就会马上加载完成，你就可以愉快的进行你的项目了。   
