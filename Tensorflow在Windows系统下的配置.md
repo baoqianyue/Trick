@@ -55,4 +55,12 @@ print(sess.run(hello))
  ```      
  如果能够输出'Hello, TensorFlow!'像下面这样就代表配置成功了   
  ![](http://p1.bqimg.com/567571/64f2e35535f21dfe.png)  
- 这样你就可以学习TensorFlow了，加油吧~
+ 这样你就可以学习TensorFlow了，加油吧~     
+
+* 补充     
+ 后来听学长说想要用gpu来运行Tensorflow还需要配置两个程序，经过又一阶段的踩坑，小弟我特地来补充     
+
+  * cuda     
+    * 下载    
+    进入官网[cuda官网](https://developer.nvidia.com/cuda-downloads)        
+    ![](D:/image/cuda下载.png)       
