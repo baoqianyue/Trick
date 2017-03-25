@@ -72,7 +72,6 @@ print(sess.run(hello))
       ![](http://i2.buimg.com/588926/2e716893c05d0dba.png)    
 
   * cuDnn       
-
     * 下载安装    
    [进入官网](https://developer.nvidia.com/cudnn)     
    先要注册账号并填一些信息，然后下载对应的压缩包    
