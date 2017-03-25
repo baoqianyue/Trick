@@ -73,11 +73,12 @@ print(sess.run(hello))
       所以在系统变量中的CUDA_PATH中，加上这两个路径    
       ![](http://i2.buimg.com/588926/2e716893c05d0dba.png)    
 
-  * cuDnn   
-   * 下载安装    
+  * cuDnn     
+ 
+    * 下载安装    
    [进入官网](https://developer.nvidia.com/cudnn)     
    先要注册账号并填一些信息，然后下载对应的压缩包    
-   * 使用      
+    * 使用      
    先将压缩包解压     
     ![](http://i1.piimg.com/588926/c2afcb9161fb8d95.png)   
 
