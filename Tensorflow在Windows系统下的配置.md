@@ -1,6 +1,6 @@
 # Tensorflow安装踩坑记   
 Tensorflow是谷歌研发的第二代人工智能学习系统，之前只支持Linux和Mac OS环境，现在在Windows上也可以运行，不过运行条件十分苛刻，必须，注意是必须要求Python 3.5.0(64bit)版本，先前自己装的时候试过3.6版本的，也试过32位的，都不支持，真的是踩了好多坑。
-* 1 下载Python     
+## 1 下载Python     
  * 有可能你到了Python下载官网后，你还是找不到该下的版本，极有可能下载成32位的，所以我这里直接放一个链接，直接下载就行了，避免踩坑。    
  [Python 3.5.0 64位](https://www.python.org/ftp/python/3.5.0/python-3.5.0-amd64.exe)     
  * 然后进行python的安装    
@@ -15,7 +15,7 @@ Tensorflow是谷歌研发的第二代人工智能学习系统，之前只支持L
  可能需要5到6分钟的时间。   
 
 
-* 2 安装Tensorflow    
+## 2 安装Tensorflow    
   * 打开命令行    
   先输入    
 ```
@@ -43,11 +43,9 @@ Tensorflow是谷歌研发的第二代人工智能学习系统，之前只支持L
  然后就开始安装，如果出现下面的情况就基本成功了，我们可以测试一下   
  ![](http://p1.bqimg.com/567571/74e48d46f55ba14d.png)     
 
-* 3 测试    
+*  测试    
  在Python下输入下面的语句   
- ```python3
- $ python
-...
+ ```python-3
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
@@ -55,9 +53,9 @@ print(sess.run(hello))
  ```      
  如果能够输出'Hello, TensorFlow!'像下面这样就代表配置成功了   
  ![](http://p1.bqimg.com/567571/64f2e35535f21dfe.png)  
- 这样你就可以学习TensorFlow了，加油吧~     
+ 这样你就可以学习TensorFlow了。     
 
-* 安装CUDA和cuDnn库           
+## 3 安装CUDA和cuDnn库           
  后来听学长说想要用gpu来运行Tensorflow还需要配置两个库，经过又一阶段的踩坑，小弟我特地来补充     
 
   * cuda     
@@ -73,11 +71,12 @@ print(sess.run(hello))
       所以在系统变量中的CUDA_PATH中，加上这两个路径    
       ![](http://i2.buimg.com/588926/2e716893c05d0dba.png)    
 
-  * cuDnn   
-   * 下载安装    
+  * cuDnn       
+
+    * 下载安装    
    [进入官网](https://developer.nvidia.com/cudnn)     
    先要注册账号并填一些信息，然后下载对应的压缩包    
-   * 使用      
+    * 使用      
    先将压缩包解压     
     ![](http://i1.piimg.com/588926/c2afcb9161fb8d95.png)   
 
@@ -88,10 +87,27 @@ print(sess.run(hello))
     ![](http://i1.piimg.com/588926/c2afcb9161fb8d95.png)    
 
     ![](http://i1.piimg.com/588926/4b27e52895db3412.png)    
-    将**bin**,**include**,**lib**中的文件拷到CUDA对应的文件中就OK        
+    将**bin**,**include**,**lib**中的文件拷到CUDA对应的文件夹中就OK     
+
+    现在你就可以调用CUDA和cuDnn进行加速了        
 
 
- 现在你就可以调用CUDA和cuDnn进行加速了        
+  * 测试
+  这里我们还用上面的测试代码      
 
-* 安装Matplotlib     
-Matplotlib是Python的一个图形框架，在进行大量数据的运算时会起到
+
+  ```python-3
+  import tensorflow as tf
+  hello = tf.constant('Hello, TensorFlow!')
+  sess = tf.Session()
+  print(sess.run(hello))
+  ```       
+  如果运行的时候先会出现正确加载CUDA和cuDnn的提示信息，像下面这样        
+
+  ![Markdown](http://i1.piimg.com/1949/1cfc2ae0bbe39c2d.png)   
+
+  接着出现你的显卡信息     
+
+  ![Markdown](http://i2.buimg.com/1949/aaf55aaf7e2ae45f.png)    
+
+  那就大功告成了。      
