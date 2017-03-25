@@ -57,10 +57,41 @@ print(sess.run(hello))
  ![](http://p1.bqimg.com/567571/64f2e35535f21dfe.png)  
  这样你就可以学习TensorFlow了，加油吧~     
 
-* 补充     
- 后来听学长说想要用gpu来运行Tensorflow还需要配置两个程序，经过又一阶段的踩坑，小弟我特地来补充     
+* 安装CUDA和cuDnn库           
+ 后来听学长说想要用gpu来运行Tensorflow还需要配置两个库，经过又一阶段的踩坑，小弟我特地来补充     
 
   * cuda     
     * 下载    
     进入官网[cuda官网](https://developer.nvidia.com/cuda-downloads)        
-    ![](D:/image/cuda下载.png)       
+    ![](../image/cuda下载.png)     
+    这里要下载正确的版本,建议选择**exe[local]**     
+    文件是比较大的，下载好了正常安装就ok      
+    * 配置系统变量   
+      默认cuda环境变量是```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0```，
+      但是这样还不够，不能访问```bin```和```lib\x64```下的包       
+
+      所以在系统变量中的CUDA_PATH中，加上这两个路径    
+      ![](../image/cuda.png)    
+
+  * cuDnn   
+   * 下载安装    
+   [进入官网](https://developer.nvidia.com/cudnn)     
+   先要注册账号并填一些信息，然后下载对应的压缩包    
+   * 使用      
+   先将压缩包解压     
+   ![](../image/cuDnn解压.png)    
+
+    为了在运行tensorflow的时候也能将这个库加载进去，我们要将解压后的文件拷到CUDA对应的文件夹下       
+
+    CUDA文件夹目录是```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0```     
+
+    ![](../image/cudnn.png)    
+
+    ![](../image/gpucuda.png)     
+    将**bin**,**include**,**lib**中的文件拷到CUDA对应的文件中就OK        
+
+
+ 现在你就可以调用CUDA和cuDnn进行加速了        
+
+* 安装Matplotlib     
+Matplotlib是Python的一个图形框架，在进行大量数据的运算时会起到
