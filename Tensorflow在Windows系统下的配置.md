@@ -63,7 +63,7 @@ print(sess.run(hello))
   * cuda     
     * 下载    
     进入官网[cuda官网](https://developer.nvidia.com/cuda-downloads)        
-    ![](../image/cuda下载.png)     
+    ![](http://i4.buimg.com/588926/0bc6c93bfd16870e.png)   
     这里要下载正确的版本,建议选择**exe[local]**     
     文件是比较大的，下载好了正常安装就ok      
     * 配置系统变量   
@@ -71,7 +71,7 @@ print(sess.run(hello))
       但是这样还不够，不能访问```bin```和```lib\x64```下的包       
 
       所以在系统变量中的CUDA_PATH中，加上这两个路径    
-      ![](../image/cuda.png)    
+      ![](http://i2.buimg.com/588926/2e716893c05d0dba.png)    
 
   * cuDnn   
    * 下载安装    
@@ -79,15 +79,15 @@ print(sess.run(hello))
    先要注册账号并填一些信息，然后下载对应的压缩包    
    * 使用      
    先将压缩包解压     
-   ![](../image/cuDnn解压.png)    
+    ![](http://i1.piimg.com/588926/c2afcb9161fb8d95.png)   
 
     为了在运行tensorflow的时候也能将这个库加载进去，我们要将解压后的文件拷到CUDA对应的文件夹下       
 
     CUDA文件夹目录是```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0```     
 
-    ![](../image/cudnn.png)    
+    ![](http://i1.piimg.com/588926/c2afcb9161fb8d95.png)    
 
-    ![](../image/gpucuda.png)     
+    ![](http://i1.piimg.com/588926/4b27e52895db3412.png)    
     将**bin**,**include**,**lib**中的文件拷到CUDA对应的文件中就OK        
 
 
