@@ -1,6 +1,9 @@
 # 修改AndroidStudio背景方法   
 成天写代码很枯燥，如果你的IDE背景是你喜欢的东西而不是冰冷的代码，那该有多爽。   
-## 1.先要在你的AndroidStudio下载一个插件  
+## 1.先要在你的AndroidStudio下载一个插件          
+
+
+下载的时候可能搜不到，可以修改一下代理
 主界面**File**->**Settings**->**Plugins**
 搜索Sexy Editor,然后下载，下载完成后重启你的AndroidStudio  
 ![](http://i1.piimg.com/567571/7eaffebb252bc664.png)
