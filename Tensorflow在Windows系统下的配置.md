@@ -64,8 +64,10 @@ print(sess.run(hello))
     ![](http://i4.buimg.com/588926/0bc6c93bfd16870e.png)   
     这里要下载正确的版本,建议选择**exe[local]**     
     文件是比较大的，下载好了正常安装就ok      
-    * 配置系统变量   
-      默认cuda环境变量是```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0```，
+    * 配置系统变量  
+
+      默认cuda环境变量是```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0```，   
+
       但是这样还不够，不能访问```bin```和```lib\x64```下的包       
 
       所以在系统变量中的CUDA_PATH中，加上这两个路径    
@@ -82,6 +84,7 @@ print(sess.run(hello))
     为了在运行tensorflow的时候也能将这个库加载进去，我们要将解压后的文件拷到CUDA对应的文件夹下       
 
     CUDA文件夹目录是```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0```     
+
 
     ![](http://i1.piimg.com/588926/c2afcb9161fb8d95.png)    
 
