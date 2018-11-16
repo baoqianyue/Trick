@@ -1,6 +1,6 @@
 package week01.dataandvar;
 
-import week01.classAndObject.Person;
+import week01.classandobject.Person;
 
 /**
  * 演示不同包下子类对父类中属性和方法的访问情况

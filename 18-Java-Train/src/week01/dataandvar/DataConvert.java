@@ -1,6 +1,6 @@
 package week01.dataandvar;
 
-import week01.classAndObject.Person;
+import week01.classandobject.Person;
 
 /**
  * 演示数据类型转换

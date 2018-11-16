@@ -1,4 +1,4 @@
-package week01.classAndObject;
+package week01.classandobject;
 
 /**
  * 演示private和protected权限修饰符
