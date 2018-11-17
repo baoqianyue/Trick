@@ -25,6 +25,9 @@ public class Person {
         age = age1;
     }
 
+    Person() {
+    }
+
     void code() {
         System.out.println("coding");
     }
