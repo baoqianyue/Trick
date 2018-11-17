@@ -1,4 +1,4 @@
-package week01.classAndObject;
+package week01.classandobject;
 
 /**
  * Java实体类
