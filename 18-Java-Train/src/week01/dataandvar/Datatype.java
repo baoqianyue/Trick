@@ -5,6 +5,7 @@ package week01.dataandvar;
  */
 public class Datatype {
 
+
     public static void main(String[] args) {
         //字符型
         char name1 = '鲍';

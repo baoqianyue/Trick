@@ -1,9 +1,14 @@
 package week01.dataandvar;
 
+import week01.classandobject.Person;
+
 /**
  * 演示数据类型转换
  */
 public class DataConvert {
+
+    public String importStr;
+
     public static void main(String[] args) {
         //自动类型转换
         int a = 10;
@@ -19,5 +24,13 @@ public class DataConvert {
 
         System.out.println("x= " + x);
         System.out.println("y= " + y);
+    }
+
+    /**
+     * 演示不同包下访问其他包protected和public修饰的内容
+     */
+    public void importFun() {
+        String name = Person.publicStaName;
+        Person.publicFun();
     }
 }
