@@ -1,4 +1,4 @@
-package week01.extendAndInterface;
+package week01.extendandinterface;
 
 public class Employee extends Person implements Comparable<Employee>{
     private int salary;

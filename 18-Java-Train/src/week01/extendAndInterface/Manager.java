@@ -1,4 +1,4 @@
-package week01.extendAndInterface;
+package week01.extendandinterface;
 
 public class Manager extends Employee {
     private int bonus;
@@ -55,6 +55,5 @@ public class Manager extends Employee {
     @Override
     public int compareTo(Employee o) {
         return Integer.compare(getSalary(), o.getSalary());
-
     }
 }
