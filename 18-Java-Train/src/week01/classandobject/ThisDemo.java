@@ -1,6 +1,5 @@
 package week01.classandobject;
 
-
 /**
  * 演示this关键字
  */
@@ -10,9 +9,16 @@ public class ThisDemo {
 
     private int age;
 
+    public ThisDemo(String name) {
+        this.name = name;
+    }
 
+
+    //当构造函数要完成的任务较多时，而且需要对构造函数进行重载时
+    //可以使用this在构造函数调用其他构造函数
     public ThisDemo(String name, int age) {
-        name = name;
+        //this调用构造函数只能放在第一行
+        this(name);
         this.age = age;
         this.show();
     }

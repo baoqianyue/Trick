@@ -39,8 +39,6 @@ public class ProcessControl {
             System.out.println();
         }
 
-        /**
-         * switch结构判断从键盘输入的年月是不是闰年
-         */
+
     }
 }

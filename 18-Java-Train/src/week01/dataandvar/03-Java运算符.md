@@ -22,9 +22,6 @@ condition ? x1 : x2
 
 [输出九九乘法表](./ProcessControl.java)   
 
-## 函数   
-
-...   
 
     
 
