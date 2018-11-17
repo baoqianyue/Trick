@@ -1,6 +1,6 @@
-package week01.extendAndInterface;
+package week01.extendandinterface;
 
-public abstract class Person {
+public abstract class Person extends JDBCObject{
     private String name;
     private int sex;
 

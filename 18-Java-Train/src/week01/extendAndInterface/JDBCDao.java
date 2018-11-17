@@ -1,5 +1,9 @@
-package week01.extendAndInterface;
+package week01.extendandinterface;
 
-public interface JDBCDao {
+public class JDBCDao {
+    public interface SaveListener{
+        void onSucceed(String response);
 
+        void onFail(Exception e);
+    }
 }
