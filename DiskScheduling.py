@@ -4,7 +4,7 @@ def loadRequest(filename):
     request = f.readline()
     return curr, request
 
-
+#先来先服务算法#
 def FCFS(filename):
     length = 0  # 总寻道长度
     queue = []  # 寻道记录
@@ -18,7 +18,7 @@ def FCFS(filename):
     n = len(request.split())  # 计算请求磁道数,计算平均寻道时间
     print('平均寻道时间:%.1f' % (length / n))
 
-
+#最短寻道距离优先#    
 def findMinLengthIndex(curr, request):
     lengths = []  # 保存全部寻道长度
     for r in request:
@@ -42,8 +42,12 @@ def SSTF(filename):
         print('当前磁道：%s, 下一磁道:%s, 移动:%d' % (curr, request_copy[index], sum))
         curr = request_copy[index]
         request_copy.remove(request_copy[index])
-    print('平均寻道距离:%.f' % (length / n))
+    print('平均寻道距离:%.f' % (length / n))  
+
 
 
 if __name__ == "__main__":
-    FCFS('C:/Users/鲍骞月/Desktop/diskrequest.txt')
+    FCFS('C:/Users/BarackBao/Desktop/diskrequest.txt')
+    SSTF('C:/Users/BarackBao/Desktop/diskrequest.txt')  
+
+
