@@ -19,7 +19,7 @@ public class ArrayDemo {
         //中括号放在数组名前和后等价
         int arr1[] = new int[2];
         //2.直接给数组中每个元素赋值，可以不指定数组长度，系统会自行计算
-         int[] arr2 = new int[]{3, 2, 3};
+        int[] arr2 = new int[]{3, 2, 3};
         //可以不写new int []，等价
         int[] arr3 = {3, 2, 3};
 
