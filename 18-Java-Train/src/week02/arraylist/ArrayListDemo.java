@@ -39,7 +39,7 @@ public class ArrayListDemo {
         //包括头不包括尾
         List<Person> subList = personList.subList(0, 3);
 
-//        Collections.sort(personList);
+        Collections.sort(personList);
         Collections.sort(personList, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
