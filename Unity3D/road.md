@@ -105,5 +105,58 @@
 
     设置灯光的照射强度    
 
-* 阴影类型 Shadow Type     
+* 阴影类型 Shadow Type       
+
+
+## 组件与脚本   
+
+### 组件Component   
+
+* Transform组件    
+
+    变换,所有的场景对象都具备的一个组件,用于存储场景对象的基本信息   
+
+    * Position 位置   
+
+    * Rotation 旋转   
+
+    * Scale 缩放   
+
+### Script脚本   
+
+* Start()方法   
+
+    当游戏运行起来就会执行一次   
+
+* Update()方法   
+
+    循环调用方法,每帧调用一次,一秒钟大概执行60次    
+
+* Debug.Log()方法  
+
+    在Unity内置的Console输出调试信息   
+
+#### 获取键盘输入    
+
+返回值: bool类型  
+参数: KeyCode Enum类型   
+键码,保存了键盘上按键的索引码   
+
+* Input.GetKey() 按下某键后,持续返回true  
+* Input.GetKeyDown() 按下某键的一瞬间,返回true   
+* Input.GetKeyUp() 抬起某键的一瞬间,返回true     
+
+#### 获取鼠标输入   
+
+返回值: bool类型   
+参数: 鼠标按键索引值   
+0 -> 左键, 1 -> 右键, 2 -> 中键    
+
+* Input.GetMouseButton() 按下某键后,持续返回true   
+* Input.GetMouseButtonDown() 按下某键的一瞬间,返回true   
+* Input.GetMouseButtonUp() 抬起某键的一瞬间,返回true   
+
+
+
+
 
